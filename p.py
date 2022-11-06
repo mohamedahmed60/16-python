@@ -1,5 +1,5 @@
-# number=[print(i,j) for i in  range(5) for j in range(3)]
-# print(number)
+ number=[print(i,j) for i in  range(5) for j in range(3)]
+ print(number)
 
 
 # Mypy هو مدقق اختياري من النوع الثابت لبايثون يهدف إلى الجمع بين مزايا الكتابة الديناميكية (أو "البط") والكتابة الثابتة
@@ -7,27 +7,27 @@
 
 
 
-# from unittest import result
+ from unittest import result
 
 
-# def mysum(x:int,y:int) ->int:
-#     result= x+y
-#     return result
+ def mysum(x:int,y:int) ->int:
+     result= x+y
+     return result
 
-# v = mysum(10,12)
-# print(v)    #run for labriry mypy
-
-
-# from turtle import title
+ v = mysum(10,12)
+ print(v)    #run for labriry mypy
 
 
-# names = ["moahmed", "ali", "mahmoud","salam"]
-# new_names=[]
+ from turtle import title
 
-# for name in names:
-#     new_names.append(name.title())
 
-# print(new_names)
+ names = ["moahmed", "ali", "mahmoud","salam"]
+ new_names=[]
+
+ for name in names:
+     new_names.append(name.title())
+
+ print(new_names)
 
 # وتكون فاضية list يقوم بالطباعة قبل ال for قبل  print عند عمل   
 # number=[(i,j) for i in range(5) for j in range(3)]
@@ -35,8 +35,8 @@
 
 
 #even number
-# even =[i for i in range(1,101) if i%2==0]
-# print(even)
+ even =[i for i in range(1,101) if i%2==0]
+ print(even)
 
 
 #if with else 
@@ -74,7 +74,7 @@ for index, name in enumerate(names,start=1):#لجعلها تبداء من 1
 '''
 
 #Using map 
-'''
+
 names = ["moahmed", "ali", "mahmoud","ahmed"]
 
 def mytitle(x):
@@ -85,12 +85,12 @@ new_names2=map(lambda x:x.title(),names) #للتعامل مع دالة بسيط�
 
 print(list(new_names2))
 print(list(new_names))# listنقوم باعدتها الى 
-'''
+
 
 
 
 #using filter
-'''
+
 number=[20,100,80,25,12,18]
 
 def bigger(x):
@@ -100,8 +100,8 @@ def bigger(x):
         return False
 my_number = filter(bigger,number)
 print(list(my_number))
-'''
-'''
+
+
 #using reduc
 
 from functools import reduce
@@ -113,13 +113,13 @@ def mysum(x,y):
 resulte=reduce(mysum,number)
 print(resulte)
 
-'''
-'''
+
+
 #لمعرفة طريقة عمل الدالة 
 import functools
 
 print(dir(functools))
-'''
+
 def mysum(x,y):
     print(x-y)
 
